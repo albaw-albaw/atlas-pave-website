@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — ATLAS.Pave</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Sub-page hero (shorter) */
+.hero-sub {
+  margin-top: 68px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0d2a4a 100%);
+  padding: 72px 40px 68px;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.hero-sub::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(184,224,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,224,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.hero-sub .container { position: relative; z-index: 1; }
+.hero-sub .eyebrow { margin-bottom: 18px; }
+.hero-sub-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800; letter-spacing: -0.03em;
+  color: #fff; line-height: 1.14; margin-bottom: 16px;
+}
+.hero-sub-title em { font-style: normal; background: linear-gradient(135deg, var(--sky), #7ab8f5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-sub-tagline { font-size: 1rem; color: rgba(184,224,255,0.65); max-width: 600px; margin: 0 auto; line-height: 1.75; }
+@media(max-width:768px){ .hero-sub { padding: 56px 20px 52px; } }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="Logo%20ATLASPave.png" alt="ATLAS.Pave">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_solution">Solution</a></li>
+      <li><a href="pricing.html" data-i18n="nav_pricing">Pricing</a></li>
+      <li><a href="about.html" class="active" data-i18n="nav_about">About Us</a></li>
+    </ul>
+    <button id="langToggle" class="lang-toggle" data-lang="en" aria-label="Switch language">
+      <span class="lt-en lt-active">EN</span>
+      <span class="lt-id">ID</span>
+    </button>
+    <a href="about.html#contact" class="nav-cta" data-i18n="nav_cta_other">Contact Us →</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="nav-drawer" id="navDrawer">
+  <a href="index.html" data-i18n="nav_solution">Solution</a>
+  <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+  <a href="about.html" class="active" data-i18n="nav_about">About Us</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero-sub">
+  <div class="container">
+    <div class="eyebrow sr" data-i18n="ab_eyebrow">About ATLAS.Pave</div>
+    <h1 class="hero-sub-title sr" data-i18n-html="ab_title">Built by experts.<br><em>Trusted by Engineers &amp; Decision Makers.</em></h1>
+    <p class="hero-sub-tagline sr" data-i18n="ab_tagline">A team combining AI, pavement engineering, GIS, and infrastructure management — across five countries and decades of experience.</p>
+  </div>
+</section>
+
+<!-- ══ PAGI INITIATIVE ══ -->
+<section class="section">
+  <div class="container">
+    <div>
+
+      <!-- Narrative -->
+      <div class="sr">
+        <div class="eyebrow" style="margin-bottom:20px;" data-i18n="pagi_eyebrow">The PAGI Initiative</div>
+        <h2 class="section-title" style="text-align:left;margin-bottom:24px;" data-i18n-html="pagi_title">The team behind<br><em>ATLAS.Pave</em></h2>
+        <div class="about-text">
+          <p data-i18n-html="pagi_p1">ATLAS.Pave is a product of the <strong>PAGI Initiative</strong> — a multidisciplinary research and engineering group combining expertise in artificial intelligence, pavement engineering, geographic information systems, and infrastructure asset management. It is supported by various authorities and leading property developers. Founded in Singapore, PAGI brings together practitioners with decades of hands-on experience in road construction, maintenance, and digital infrastructure across government and private sectors.</p>
+          <p data-i18n-html="pagi_p2">Our solutions bridge the gap between academic research and real-world deployment — producing solutions that are not just technically robust, but operationally practical. ATLAS.Pave is built on proven, peer-reviewed methodology. Every component, from the AiOT sensor protocol to the International (e.g. ASTM) and Local Standards (e.g. Bina Marga), has been developed and validated through real survey campaigns across multiple countries and surface types.</p>
+        </div>
+      </div>
+
+
+      <!-- Expertise highlights -->
+      <div class="hl-list sr" style="margin-top:56px;margin-bottom:40px;">
+        <div class="hl-item">
+          <span class="hl-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="var(--azure-l)"/><rect x="9" y="9" width="10" height="10" rx="2" stroke="var(--azure)" stroke-width="1.5" fill="none"/><rect x="12" y="12" width="4" height="4" rx="1" fill="var(--azure-d)"/><path d="M11 9V6.5M17 9V6.5M11 21.5V19M17 21.5V19M9 11H6.5M9 17H6.5M21.5 11H19M21.5 17H19" stroke="var(--azure)" stroke-width="1.3" stroke-linecap="round" opacity="0.65"/></svg></span>
+          <div class="hl-text">
+            <h4 data-i18n-html="exp1_title">Artificial Intelligence &amp; Computer Vision</h4>
+            <p data-i18n="exp1_desc">Deep learning models purpose-built for pavement distress detection — trained on real survey data and validated against ASTM standards.</p>
+          </div>
+        </div>
+        <div class="hl-item">
+          <span class="hl-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="var(--azure-l)"/><path d="M10 6 8.5 22M18 6l1.5 16" stroke="var(--azure)" stroke-width="1.6" stroke-linecap="round"/><path d="M14 7v3M14 13v3M14 19v2" stroke="var(--azure-d)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <div class="hl-text">
+            <h4 data-i18n="exp2_title">Pavement Engineering</h4>
+            <p data-i18n="exp2_desc">Decades of combined experience in road construction, maintenance, and rehabilitation across AC and PCC pavement types.</p>
+          </div>
+        </div>
+        <div class="hl-item">
+          <span class="hl-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="var(--azure-l)"/><path d="M14 7c-2.8 0-5 2.1-5 4.9 0 3.4 5 8.1 5 8.1s5-4.7 5-8.1C19 9.1 16.8 7 14 7z" stroke="var(--azure)" stroke-width="1.5" fill="none"/><circle cx="14" cy="11.9" r="1.9" fill="var(--azure-d)"/></svg></span>
+          <div class="hl-text">
+            <h4 data-i18n-html="exp3_title">GIS &amp; Spatial Analytics</h4>
+            <p data-i18n="exp3_desc">Advanced geospatial processing for route analysis, distress heat maps, and condition visualisation at scale.</p>
+          </div>
+        </div>
+        <div class="hl-item">
+          <span class="hl-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="var(--azure-l)"/><rect x="6" y="13" width="4" height="8" rx="1" fill="var(--azure)" opacity="0.45"/><rect x="12" y="10" width="4" height="11" rx="1" fill="var(--azure)" opacity="0.7"/><rect x="18" y="7" width="4" height="14" rx="1" fill="var(--azure-d)"/></svg></span>
+          <div class="hl-text">
+            <h4 data-i18n="exp4_title">Infrastructure Asset Management</h4>
+            <p data-i18n="exp4_desc">Strategic advisory and decision-support methodology aligned to international PMS frameworks and government procurement requirements.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expertise tags -->
+      <div class="sr">
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--lgray);margin-bottom:12px;" data-i18n="expertise_label">Core Expertise</div>
+        <div class="tag-cloud">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Pavement Engineering</span>
+          <span class="tag">PCI Analysis</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">GIS Mapping</span>
+          <span class="tag">AiOT Systems</span>
+          <span class="tag">ASTM Standards</span>
+          <span class="tag">Digital Twin</span>
+          <span class="tag">Asset Management</span>
+          <span class="tag">Budget Optimisation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<div class="cta-banner">
+  <div class="container">
+    <h2 class="cta-title sr" data-i18n-html="cta_ab_title">Work with our team on<br><em style="font-style:normal;background:linear-gradient(135deg,var(--sky),#7ab8f5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">your road network</em></h2>
+    <p class="cta-sub sr" data-i18n="cta_ab_sub">Whether you are a government agency, road authority, or infrastructure manager — we are ready to deploy for your next project.</p>
+    <div class="cta-actions sr">
+      <a href="pricing.html" class="btn-primary" data-i18n="cta_btn_pricing">View Pricing →</a>
+      <a href="https://pagi.asia" target="_blank" class="btn-secondary" data-i18n="cta_btn_pagi">Visit PAGI Initiative →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="sr">
+        <div class="eyebrow" style="margin-bottom:20px;" data-i18n="contact_eyebrow">Contact</div>
+        <h2 class="contact-title" data-i18n-html="contact_title">Let's discuss your<br>road network.</h2>
+        <p class="contact-sub" data-i18n="contact_sub">Whether you are a road authority, government agency, or private infrastructure manager — we would welcome the opportunity to show you what ATLAS.Pave can do for your network.</p>
+        <a href="mailto:contact@atlas-pave.ai" class="contact-link">✉ contact@atlas-pave.ai</a>
+        <a href="https://pagi.asia" target="_blank" class="contact-link">🌐 pagi.asia — About our team</a>
+      </div>
+      <div class="sr">
+        <h3 style="font-size:1.15rem;font-weight:700;color:var(--blue);margin-bottom:20px;" data-i18n="contact_send">Send us a message</h3>
+        <form onsubmit="return false;">
+          <input class="ct-input" type="text" data-i18n-ph="contact_name" placeholder="Your name">
+          <input class="ct-input" type="email" data-i18n-ph="contact_email" placeholder="Email address">
+          <input class="ct-input" type="text" data-i18n-ph="contact_org" placeholder="Organisation">
+          <select class="ct-input" style="appearance:none;cursor:pointer;">
+            <option value="" disabled selected data-i18n="contact_plan">Plan of interest</option>
+            <option data-i18n="contact_plan_opt1">Pilot</option>
+            <option data-i18n="contact_plan_opt2">Standard</option>
+            <option data-i18n="contact_plan_opt3">Advanced</option>
+            <option data-i18n="contact_plan_opt4">Custom / Government</option>
+          </select>
+          <textarea class="ct-input ct-textarea" data-i18n-ph="contact_msg" placeholder="Brief description of your network / project"></textarea>
+          <button type="submit" class="btn-primary" style="border:none;cursor:pointer;" data-i18n="contact_btn">Send Enquiry →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-wordmark">ATLAS.<span>Pave</span></div>
+        <p data-i18n-html="footer_tagline">AI-driven Technologies for Lifecycle &amp;<br>Adaptive Infrastructure Management Systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_col_platform">Platform</h4>
+        <a href="index.html" data-i18n="footer_solution">Solution Overview</a>
+        <a href="index.html#solution" data-i18n="footer_how">How It Works</a>
+        <a href="index.html#why" data-i18n="footer_why">Why ATLAS.Pave</a>
+        <a href="pricing.html" data-i18n="footer_pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_col_company">Company</h4>
+        <a href="about.html" data-i18n="footer_about">About ATLAS.Pave</a>
+        <a href="about.html#contact" data-i18n="footer_contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_col_cap">Capabilities</h4>
+        <a href="index.html#capabilities" data-i18n="footer_cap1">AiOT Data Collection</a>
+        <a href="index.html#capabilities" data-i18n="footer_cap2">AI Defect Analysis</a>
+        <a href="index.html#capabilities" data-i18n="footer_cap3">GIS Mapping</a>
+        <a href="index.html#capabilities" data-i18n="footer_cap4">Predictive Modelling</a>
+        <a href="index.html#capabilities" data-i18n="footer_cap5">Budget Optimisation</a>
+        <a href="index.html#capabilities" data-i18n="footer_cap6">Life Cycle Modelling</a>
+        <a href="index.html#capabilities" data-i18n="footer_cap7">Digital Twin</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© 2026 ATLAS.Pave · Singapore</span>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('navHamburger');
+  var drawer = document.getElementById('navDrawer');
+  btn.addEventListener('click', function(){
+    var open = drawer.classList.toggle('open');
+    btn.classList.toggle('open', open);
+  });
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      drawer.classList.remove('open');
+      btn.classList.remove('open');
+    });
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var group = e.target.parentElement.querySelectorAll('.sr:not(.in)');
+        var d = 0;
+        group.forEach(function(s){
+          if(s.getBoundingClientRect().top < window.innerHeight + 60){
+            setTimeout(function(){ s.classList.add('in'); }, d);
+            d += 65;
+          }
+        });
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+  document.querySelectorAll('.sr').forEach(function(el){ io.observe(el); });
+})();
+</script>
+<script src="translations.js"></script>
+</body>
+</html>
