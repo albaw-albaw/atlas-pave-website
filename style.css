@@ -687,6 +687,10 @@ footer {
 /* ════════════════════════════════════════
    MOBILE — swipe slider for cards + table fix
    ════════════════════════════════════════ */
+
+/* Hide swipe hint on desktop by default */
+.cap-swipe-hint { display: none; }
+
 @media (max-width: 767px) {
 
   /* Capability card rows → horizontal swipe slider */
@@ -710,11 +714,15 @@ footer {
     scroll-snap-align: start;
   }
 
-  /* Swipe hint label */
-  .cap-grid-row2::after,
-  .mod-grid::after {
-    content: '';
-    flex: 0 0 8px;
+  /* Swipe hint — show on mobile only */
+  .cap-swipe-hint {
+    display: block;
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--lgray);
+    margin-top: -8px;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
   }
 
   /* Comparison table → horizontal scroll */
@@ -738,13 +746,4 @@ footer {
   }
   .benefit-card { padding: 18px 14px; }
 
-  /* Swipe hint text below sliders */
-  .cap-swipe-hint {
-    text-align: center;
-    font-size: 0.72rem;
-    color: var(--lgray);
-    margin-top: -12px;
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
-  }
 }
