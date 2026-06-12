@@ -684,3 +684,67 @@ footer {
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+/* ════════════════════════════════════════
+   MOBILE — swipe slider for cards + table fix
+   ════════════════════════════════════════ */
+@media (max-width: 767px) {
+
+  /* Capability card rows → horizontal swipe slider */
+  .mod-grid,
+  .cap-grid-row2 {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 20px 16px;
+    gap: 14px !important;
+    scrollbar-width: none;
+    margin: 0 -20px 20px !important;
+    max-width: none !important;
+  }
+  .mod-grid::-webkit-scrollbar,
+  .cap-grid-row2::-webkit-scrollbar { display: none; }
+
+  .cap-card {
+    flex: 0 0 75vw !important;
+    scroll-snap-align: start;
+  }
+
+  /* Swipe hint label */
+  .cap-grid-row2::after,
+  .mod-grid::after {
+    content: '';
+    flex: 0 0 8px;
+  }
+
+  /* Comparison table → horizontal scroll */
+  .matrix-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .matrix-table {
+    min-width: 580px;
+  }
+  .matrix-table th,
+  .matrix-table td {
+    padding: 11px 12px;
+    font-size: 0.78rem;
+  }
+
+  /* Benefits grid → 2 columns on mobile */
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .benefit-card { padding: 18px 14px; }
+
+  /* Swipe hint text below sliders */
+  .cap-swipe-hint {
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--lgray);
+    margin-top: -12px;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+  }
+}
