@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — ATLAS.Pave</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Sub-page hero (shorter) */
+.hero-sub {
+  margin-top: 68px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0d2a4a 100%);
+  padding: 48px 40px 44px;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.hero-sub::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(184,224,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,224,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.hero-sub .container { position: relative; z-index: 1; }
+.hero-sub .eyebrow { margin-bottom: 18px; }
+.hero-sub-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800; letter-spacing: -0.03em;
+  color: #fff; line-height: 1.14; margin-bottom: 16px;
+}
+.hero-sub-title em { font-style: normal; background: linear-gradient(135deg, var(--sky), #7ab8f5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-sub-tagline { font-size: 1rem; color: rgba(184,224,255,0.65); max-width: 520px; margin: 0 auto; line-height: 1.75; }
+
+/* Compact pricing section */
+.pricing-section { padding: 56px 0 64px; }
+.pricing-section .section-header { margin-bottom: 40px; }
+
+/* Includes pills row */
+.includes-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.include-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px 24px;
+  box-shadow: var(--shadow); transition: var(--transition);
+}
+.include-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.include-num { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; color: var(--lgray); text-transform: uppercase; margin-bottom: 6px; }
+.include-title { font-size: 1rem; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+.include-desc { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
+
+/* FAQ rows */
+.faq-list { display: flex; flex-direction: column; gap: 0; }
+.faq-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.faq-item:first-child { border-top: 1px solid var(--border); }
+.faq-q { font-size: 1rem; font-weight: 700; color: var(--blue); margin-bottom: 8px; display: flex; align-items: flex-start; gap: 12px; }
+.faq-q::before { content: 'Q'; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: var(--azure); background: var(--azure-l); padding: 3px 8px; border-radius: 6px; flex-shrink: 0; margin-top: 2px; }
+.faq-a { font-size: 0.9rem; color: var(--gray); line-height: 1.75; padding-left: 34px; }
+
+@media(max-width:768px){
+  .hero-sub { padding: 56px 20px 52px; }
+  .includes-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-text">
+        <div class="wordmark">ATLAS.Pave</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Solution</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    <a href="about.html#contact" class="nav-cta">Contact Us →</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="nav-drawer" id="navDrawer">
+  <a href="index.html">Solution</a>
+  <a href="pricing.html" class="active">Pricing</a>
+  <a href="about.html">About Us</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero-sub">
+  <div class="container">
+    <div class="eyebrow sr">Transparent · Scalable · No Hidden Fees</div>
+    <h1 class="hero-sub-title sr">Simple plans for every<br><em>scale of operation</em></h1>
+    <p class="hero-sub-tagline sr">From corridor pilot to full network management — start small, scale with confidence.</p>
+  </div>
+</section>
+
+<!-- ══ PRICING CARDS ══ -->
+<section class="section pricing-section">
+  <div class="container">
+    <div class="section-header sr">
+      <div class="eyebrow">Pricing</div>
+      <h2 class="section-title">Three tiers. <em>One intelligent platform.</em></h2>
+      <p class="section-sub">All tiers include the ATLAS.Pave platform, AiOT device deployment, AI detection, and auto-generated PDF reports. Your survey data is stored on Singapore-based servers, fully isolated per client, and never shared with third parties. Contact us for custom government and enterprise agreements.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- PILOT -->
+      <div class="price-card sr">
+        <div class="price-tier">Tier 1</div>
+        <h2 class="price-name">Pilot</h2>
+        <p class="price-tagline">Evaluate ATLAS.Pave on a single road segment. Everything needed for a rigorous proof-of-concept.</p>
+        <hr class="price-divider">
+        <ul class="price-features">
+          <li><span class="fcheck">✓</span><div><strong>Up to 5 km</strong> of road surveyed</div></li>
+          <li><span class="fcheck">✓</span><div>AiOT device deployment &amp; on-site setup</div></li>
+          <li><span class="fcheck">✓</span><div>AI defect detection (5+ distress types)</div></li>
+          <li><span class="fcheck">✓</span><div>PCI Analysis Report</div></li>
+          <li><span class="fcheck">✓</span><div>PCI Strip Map Report</div></li>
+          <li><span class="fcheck">✓</span><div>GIS mapping output</div></li>
+          <li><span class="fcheck">✓</span><div>Single lane survey</div></li>
+          <li style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);"><span class="fcheck">🔒</span><div style="color:var(--gray);"><strong style="color:var(--blue);font-weight:600;">Singapore-based servers</strong> — data isolated per client, never shared with third parties</div></li>
+        </ul>
+        <a href="about.html#contact" class="btn-price btn-price-outline">Enquire Now →</a>
+      </div>
+
+      <!-- STANDARD (featured) -->
+      <div class="price-card featured sr">
+        <div class="price-badge" style="position:absolute;top:20px;right:20px;margin:0;">Most Popular</div>
+        <div class="price-tier">Tier 2</div>
+        <h2 class="price-name">Standard</h2>
+        <p class="price-tagline">Network analysis for road authorities managing a corridor or district — full reporting suite with multi-lane and comparative analytics.</p>
+        <hr class="price-divider">
+        <ul class="price-features">
+          <li><span class="fcheck">✓</span><div><strong>Up to 100 km</strong> of road network</div></li>
+          <li><span class="fcheck">✓</span><div>Multi-lane surveying support</div></li>
+          <li><span class="fcheck">✓</span><div>Full AI defect detection suite</div></li>
+          <li><span class="fcheck">✓</span><div><strong>Actual Analytical reports</strong> — PCI Analysis, Strip Map, Deduct Value, Comparative</div></li>
+          <li><span class="fcheck">✓</span><div>Interactive GIS &amp; distress heat maps</div></li>
+          <li><span class="fcheck">✓</span><div>Multi-survey comparative analysis</div></li>
+          <li><span class="fcheck">✓</span><div>Technical &amp; budgeting recommendations</div></li>
+          <li><span class="fcheck">✓</span><div>Priority technical support</div></li>
+          <li style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);"><span class="fcheck">🔒</span><div style="color:var(--gray);"><strong style="color:var(--blue);font-weight:600;">Singapore-based servers</strong> — data isolated per client, never shared with third parties</div></li>
+        </ul>
+        <a href="about.html#contact" class="btn-price btn-price-primary">Get Started →</a>
+      </div>
+
+      <!-- ADVANCED -->
+      <div class="price-card sr">
+        <div class="price-tier">Tier 3</div>
+        <h2 class="price-name">Advanced</h2>
+        <p class="price-tagline">Intelligent PMS for agencies requiring predictive modelling, digital twin simulation, and continuous network monitoring.</p>
+        <hr class="price-divider">
+        <ul class="price-features">
+          <li><span class="fcheck">✓</span><div><strong>Unlimited network km</strong> coverage</div></li>
+          <li><span class="fcheck">✓</span><div>Everything in Standard</div></li>
+          <li><span class="fcheck">✓</span><div><strong>Predictive Performance Modelling</strong> (ML)</div></li>
+          <li><span class="fcheck">✓</span><div><strong>Budget optimisation &amp; lifecycle cost modelling</strong></div></li>
+          <li><span class="fcheck">✓</span><div>API integration with existing asset systems</div></li>
+          <li><span class="fcheck">✓</span><div>Continuous monitoring programme</div></li>
+          <li><span class="fcheck">✓</span><div>Custom report branding &amp; formats</div></li>
+          <li><span class="fcheck">✓</span><div>Dedicated account manager</div></li>
+          <li><span class="fcheck">✓</span><div><strong>Digital Twin</strong> road network simulation (optional)</div></li>
+          <li style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);"><span class="fcheck">🔒</span><div style="color:var(--gray);"><strong style="color:var(--blue);font-weight:600;">Singapore-based servers</strong> — data isolated per client, never shared with third parties</div></li>
+        </ul>
+        <a href="about.html#contact" class="btn-price btn-price-outline">Contact Sales →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT'S INCLUDED ══ -->
+<section class="section section-pale">
+  <div class="container">
+    <div class="section-header sr">
+      <div class="eyebrow">Every Plan Includes</div>
+      <h2 class="section-title">The full ATLAS.Pave<br><em>technology stack</em></h2>
+      <p class="section-sub">No matter which tier you choose, you are getting access to the same industry-leading AI, the same ASTM-compliant methodology, and the same team that built it.</p>
+    </div>
+    <div class="includes-grid">
+      <div class="include-card sr">
+        <div class="include-num">01</div>
+        <h3 class="include-title">AiOT Device &amp; Field Deployment</h3>
+        <p class="include-desc">Portable device mounted on a survey vehicle. Our team handles setup, calibration, and survey execution — you receive processed data, not raw footage.</p>
+      </div>
+      <div class="include-card sr">
+        <div class="include-num">02</div>
+        <h3 class="include-title">AI Detection &amp; PCI Analysis</h3>
+        <p class="include-desc">Deep-learning defect classification + ASTM D6433-07 PCI computation across all sample units. Includes GPS coordinates per detection, dimensions in mm, and condition ratings.</p>
+      </div>
+      <div class="include-card sr">
+        <div class="include-num">03</div>
+        <h3 class="include-title">Auto-Generated PDF Reports</h3>
+        <p class="include-desc">Publication-ready analytical reports delivered within hours of survey completion — PCI Analysis, Strip Map, Deduct Value, and Comparative Analysis, all branded for your organisation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header sr">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title">Common<br><em>questions</em></h2>
+      <p class="section-sub">Everything you need to know before getting started with ATLAS.Pave.</p>
+    </div>
+    <div class="faq-list" style="max-width:760px;margin:0 auto;">
+      <div class="faq-item sr">
+        <div class="faq-q">How long does a survey take?</div>
+        <p class="faq-a">Surveys typically run at 20–30 km/h. A 10 km corridor can be completed in under an hour of drive time. Processing and report delivery follows within hours of survey completion.</p>
+      </div>
+      <div class="faq-item sr">
+        <div class="faq-q">Do we need to close the road?</div>
+        <p class="faq-a">No. The AiOT device operates from a normal survey vehicle in active traffic. There is no requirement to close, restrict, or cone the road.</p>
+      </div>
+      <div class="faq-item sr">
+        <div class="faq-q">Is the PCI output accepted by road authorities?</div>
+        <p class="faq-a">Yes. ATLAS.Pave computes PCI strictly per ASTM D6433-07 — the same internationally recognised standard used for manual inspections — producing fully auditable, defensible results.</p>
+      </div>
+      <div class="faq-item sr">
+        <div class="faq-q">Can you survey both asphalt and concrete roads?</div>
+        <p class="faq-a">Yes. The AI model detects and classifies distress types for both AC (asphalt concrete) and PCC (Portland cement concrete) surfaces, with separate analysis tables in all reports.</p>
+      </div>
+      <div class="faq-item sr">
+        <div class="faq-q">What is the pricing structure?</div>
+        <p class="faq-a">Pricing is scoped per project based on network size, number of lanes, survey frequency, and required deliverables. Contact us for a tailored proposal — all quotes are obligation-free.</p>
+      </div>
+      <div class="faq-item sr">
+        <div class="faq-q">Do you work outside Singapore?</div>
+        <p class="faq-a">Yes. PAGI Initiative has active projects across Singapore, Indonesia, Malaysia, Germany, and the UAE. We are equipped for international deployment with local coordination support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-wordmark">ATLAS.<span>Pave</span></div>
+        <p>AI-driven Technologies for Lifecycle &amp; Adaptive Infrastructure Management Systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="index.html">Solution Overview</a>
+        <a href="index.html#solution">How It Works</a>
+        <a href="index.html#why">Why ATLAS.Pave</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About ATLAS.Pave</a>
+        <a href="mailto:contact@atlas-pave.ai">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Capabilities</h4>
+        <a href="index.html#solution">AiOT Data Collection</a>
+        <a href="index.html#solution">AI Defect Analysis</a>
+        <a href="index.html#solution">GIS Mapping</a>
+        <a href="index.html#solution">Predictive Modelling</a>
+        <a href="pricing.html">Budget Optimisation</a>
+        <a href="pricing.html">Life Cycle Modelling</a>
+        <a href="index.html#solution">Digital Twin</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ATLAS.Pave · Singapore</span>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('navHamburger');
+  var drawer = document.getElementById('navDrawer');
+  btn.addEventListener('click', function(){
+    var open = drawer.classList.toggle('open');
+    btn.classList.toggle('open', open);
+  });
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      drawer.classList.remove('open');
+      btn.classList.remove('open');
+    });
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var group = e.target.parentElement.querySelectorAll('.sr:not(.in)');
+        var d = 0;
+        group.forEach(function(s){
+          if(s.getBoundingClientRect().top < window.innerHeight + 60){
+            setTimeout(function(){ s.classList.add('in'); }, d);
+            d += 65;
+          }
+        });
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+  document.querySelectorAll('.sr').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

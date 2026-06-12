@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — ATLAS.Pave</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Sub-page hero (shorter) */
+.hero-sub {
+  margin-top: 68px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0d2a4a 100%);
+  padding: 72px 40px 68px;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.hero-sub::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(184,224,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,224,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.hero-sub .container { position: relative; z-index: 1; }
+.hero-sub .eyebrow { margin-bottom: 18px; }
+.hero-sub-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800; letter-spacing: -0.03em;
+  color: #fff; line-height: 1.14; margin-bottom: 16px;
+}
+.hero-sub-title em { font-style: normal; background: linear-gradient(135deg, var(--sky), #7ab8f5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-sub-tagline { font-size: 1rem; color: rgba(184,224,255,0.65); max-width: 600px; margin: 0 auto; line-height: 1.75; }
+@media(max-width:768px){ .hero-sub { padding: 56px 20px 52px; } }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-text">
+        <div class="wordmark">ATLAS.Pave</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Solution</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+    </ul>
+    <a href="about.html#contact" class="nav-cta">Contact Us →</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="nav-drawer" id="navDrawer">
+  <a href="index.html">Solution</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html" class="active">About Us</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero-sub">
+  <div class="container">
+    <div class="eyebrow sr">About ATLAS.Pave</div>
+    <h1 class="hero-sub-title sr">Built by experts.<br><em>Trusted by Engineers &amp; Decision Makers.</em></h1>
+    <p class="hero-sub-tagline sr">A team combining AI, pavement engineering, GIS, and infrastructure management — across five countries and decades of experience.</p>
+  </div>
+</section>
+
+<!-- ══ PAGI INITIATIVE ══ -->
+<section class="section">
+  <div class="container">
+    <div>
+
+      <!-- Narrative -->
+      <div class="sr">
+        <div class="eyebrow" style="margin-bottom:20px;">The PAGI Initiative</div>
+        <h2 class="section-title" style="text-align:left;margin-bottom:24px;">The team behind<br><em>ATLAS.Pave</em></h2>
+        <div class="about-text">
+          <p>ATLAS.Pave is a product of the <strong>PAGI Initiative</strong> — a multidisciplinary research and engineering group combining expertise in artificial intelligence, pavement engineering, geographic information systems, and infrastructure asset management. It is supported by various authorities and leading property developers. Founded in Singapore, PAGI brings together practitioners with decades of hands-on experience in road construction, maintenance, and digital infrastructure across government and private sectors.</p>
+          <p>Our solutions bridge the gap between academic research and real-world deployment — producing solutions that are not just technically robust, but operationally practical. ATLAS.Pave is built on proven, peer-reviewed methodology. Every component, from the AiOT sensor protocol to the International (e.g. ASTM) and Local Standards, has been developed and validated through real survey campaigns across multiple countries and surface types.</p>
+        </div>
+      </div>
+
+
+      <!-- Expertise highlights -->
+      <div class="hl-list sr" style="margin-top:56px;margin-bottom:40px;">
+        <div class="hl-item">
+          <span class="hl-icon">🤖</span>
+          <div class="hl-text">
+            <h4>Artificial Intelligence &amp; Computer Vision</h4>
+            <p>Deep learning models purpose-built for pavement distress detection — trained on real survey data and validated against ASTM standards.</p>
+          </div>
+        </div>
+        <div class="hl-item">
+          <span class="hl-icon">🛣️</span>
+          <div class="hl-text">
+            <h4>Pavement Engineering</h4>
+            <p>Decades of combined experience in road construction, maintenance, and rehabilitation across AC and PCC pavement types.</p>
+          </div>
+        </div>
+        <div class="hl-item">
+          <span class="hl-icon">🗺️</span>
+          <div class="hl-text">
+            <h4>GIS &amp; Spatial Analytics</h4>
+            <p>Advanced geospatial processing for route analysis, distress heat maps, and condition visualisation at scale.</p>
+          </div>
+        </div>
+        <div class="hl-item">
+          <span class="hl-icon">📊</span>
+          <div class="hl-text">
+            <h4>Infrastructure Asset Management</h4>
+            <p>Strategic advisory and decision-support methodology aligned to international PMS frameworks and government procurement requirements.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expertise tags -->
+      <div class="sr">
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--lgray);margin-bottom:12px;">Core Expertise</div>
+        <div class="tag-cloud">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Pavement Engineering</span>
+          <span class="tag">PCI Analysis</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">GIS Mapping</span>
+          <span class="tag">AiOT Systems</span>
+          <span class="tag">ASTM Standards</span>
+          <span class="tag">Digital Twin</span>
+          <span class="tag">Asset Management</span>
+          <span class="tag">Budget Optimisation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<div class="cta-banner">
+  <div class="container">
+    <h2 class="cta-title sr">Work with our team on<br><em style="font-style:normal;background:linear-gradient(135deg,var(--sky),#7ab8f5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">your road network</em></h2>
+    <p class="cta-sub sr">Whether you are a government agency, road authority, or infrastructure manager — we are ready to deploy for your next project.</p>
+    <div class="cta-actions sr">
+      <a href="pricing.html" class="btn-primary">View Pricing →</a>
+      <a href="https://pagi.asia" target="_blank" class="btn-secondary">Visit PAGI Initiative →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="sr">
+        <div class="eyebrow" style="margin-bottom:20px;">Contact</div>
+        <h2 class="contact-title">Let's discuss your<br>road network.</h2>
+        <p class="contact-sub">Whether you are a road authority, government agency, or private infrastructure manager — we would welcome the opportunity to show you what ATLAS.Pave can do for your network.</p>
+        <a href="mailto:contact@atlas-pave.ai" class="contact-link">✉ contact@atlas-pave.ai</a>
+        <a href="https://pagi.asia" target="_blank" class="contact-link">🌐 pagi.asia — About our team</a>
+      </div>
+      <div class="sr">
+        <h3 style="font-size:1.15rem;font-weight:700;color:var(--blue);margin-bottom:20px;">Send us a message</h3>
+        <form onsubmit="return false;">
+          <input class="ct-input" type="text" placeholder="Your name">
+          <input class="ct-input" type="email" placeholder="Email address">
+          <input class="ct-input" type="text" placeholder="Organisation">
+          <select class="ct-input" style="appearance:none;cursor:pointer;">
+            <option value="" disabled selected>Plan of interest</option>
+            <option>Pilot</option>
+            <option>Standard</option>
+            <option>Advanced</option>
+            <option>Custom / Government</option>
+          </select>
+          <textarea class="ct-input ct-textarea" placeholder="Brief description of your network / project"></textarea>
+          <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Send Enquiry →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-wordmark">ATLAS.<span>Pave</span></div>
+        <p>AI-driven Technologies for Lifecycle &amp; Adaptive Infrastructure Management Systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="index.html">Solution Overview</a>
+        <a href="index.html#solution">How It Works</a>
+        <a href="index.html#why">Why ATLAS.Pave</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About ATLAS.Pave</a>
+        <a href="mailto:contact@atlas-pave.ai">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Capabilities</h4>
+        <a href="index.html#solution">AiOT Data Collection</a>
+        <a href="index.html#solution">AI Defect Analysis</a>
+        <a href="index.html#solution">GIS Mapping</a>
+        <a href="index.html#solution">Predictive Modelling</a>
+        <a href="pricing.html">Budget Optimisation</a>
+        <a href="pricing.html">Life Cycle Modelling</a>
+        <a href="index.html#solution">Digital Twin</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ATLAS.Pave · Singapore</span>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('navHamburger');
+  var drawer = document.getElementById('navDrawer');
+  btn.addEventListener('click', function(){
+    var open = drawer.classList.toggle('open');
+    btn.classList.toggle('open', open);
+  });
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      drawer.classList.remove('open');
+      btn.classList.remove('open');
+    });
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var group = e.target.parentElement.querySelectorAll('.sr:not(.in)');
+        var d = 0;
+        group.forEach(function(s){
+          if(s.getBoundingClientRect().top < window.innerHeight + 60){
+            setTimeout(function(){ s.classList.add('in'); }, d);
+            d += 65;
+          }
+        });
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+  document.querySelectorAll('.sr').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
