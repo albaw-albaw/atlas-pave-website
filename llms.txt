@@ -1,0 +1,31 @@
+# ATLAS.Pave
+
+> ATLAS.Pave is an AI-driven intelligent pavement management system (PMS) that takes road authorities and infrastructure operators from survey to decision in hours. A portable AiOT sensor mounted on a vehicle surveys roads at up to 50 km/h with no road closure, and AI classifies pavement distresses, computes the Pavement Condition Index (PCI) to ASTM D6433, Survey Kondisi Jalan (Road Condition Survey) based on Bina Marga, Kementerian PUPR Standard, maps conditions on GIS, forecasts deterioration, and optimises maintenance budgets. Singapore-based.
+
+## Key facts
+
+- Product: ATLAS.Pave — AI-driven Intelligent Pavement Management System
+- Category: Pavement management software, road asset management, infrastructure asset management
+- Founded/based: Singapore
+- Standards: ASTM D6433 (PCI), Bina Marga PUPR (Indonesia SDI / road condition survey), tailorable local frameworks
+- Core technology: AiOT multi-sensor data collection, deep-learning computer vision (>80% defect classification accuracy across 7+ distress types on AC and PCC surfaces), ML deterioration modelling, GIS digital twin, lifecycle budget optimisation
+- Headline outcomes: ~95% inspection cost reduction, up to 80% time savings vs. manual methods, maintenance budget optimisation up to 80%
+- Contact: admin@atlas-pave.com
+
+## What it does
+
+- [Solution overview](https://atlas-pave.com/index.html): End-to-end pipeline from AiOT survey to defect detection, PCI analysis, predictive modelling, scenario comparison, and automated reports.
+- [Pricing & pilot programme](https://atlas-pave.com/pricing.html): Pilot-first engagement model that scales to full network analysis.
+- [About ATLAS.Pave](https://atlas-pave.com/about.html): Team, methodology, and data-security approach.
+
+## How it works (5 steps)
+
+1. Deploy AiOT device — portable sensor on a vehicle, no CAPEX, no road closure.
+2. Asset intelligence — interactive mapping with condition analytics, heat maps, performance trends.
+3. Actual & predictive analytics — deterioration models and AI-assisted regression to forecast future conditions.
+4. Scenario development — compare business-as-usual vs. optimised maintenance scenarios.
+5. Automated reports — branded PCI, strip map, deduct value and comparison PDFs; data isolated per client.
+
+## Distinguishing note
+
+ATLAS.Pave is a software/technology platform for pavement *management and analytics*. It is not an asphalt paving or construction contractor.
