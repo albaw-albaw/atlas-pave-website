@@ -43,7 +43,7 @@ window.ATLAS_I18N = {
 
     /* Hero */
     hero_title:   "The <span class=\"grad\">AI-Driven Intelligent</span><br>Pavement Management<br>System",
-    hero_desc:    "Identify pavement defects in real-time, Reduce operational monitoring costs by 95%, Optimise maintenance budget allocation by up to 80%.",
+    hero_desc:    "Identify pavement defects in real-time, Reduce operational monitoring costs by 80%, Optimise maintenance budget allocation by up to 40%.",
     hero_btn1:    "Start Pilot Programme →",
     hero_btn2:    "Explore Solution ↓",
 
@@ -322,7 +322,7 @@ window.ATLAS_I18N = {
 
     /* Hero */
     hero_title:   "Sistem Manajemen Perkerasan <span class=\"grad\">Cerdas Berbasis AI</span>",
-    hero_desc:    "Identifikasi kerusakan perkerasan secara real-time, Kurangi biaya pemantauan operasional hingga 95%, Optimalkan alokasi anggaran pemeliharaan hingga 80%.",
+    hero_desc:    "Identifikasi kerusakan perkerasan secara real-time, Kurangi biaya pemantauan operasional hingga 80%, Optimalkan alokasi anggaran pemeliharaan hingga 40%.",
     hero_btn1:    "Mulai Program Pilot →",
     hero_btn2:    "Jelajahi Solusi ↓",
 
