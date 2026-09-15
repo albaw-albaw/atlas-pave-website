@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — ATLAS.Pave</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -65,16 +67,6 @@
   .includes-grid { grid-template-columns: 1fr; }
 }
 </style>
-
-<title>Pricing & Pilot Programme | ATLAS.Pave Pavement Management Software</title>
-<meta name="description" content="Start a focused ATLAS.Pave pilot programme and scale to full road-network analysis. AI pavement condition surveys with no CAPEX and low OPEX. Request pricing.">
-<link rel="canonical" href="https://atlas-pave.com/pricing.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ATLAS.Pave Pricing & Pilot Programme">
-<meta property="og:description" content="Start with a focused pilot and scale as confidence grows. No CAPEX, low OPEX AI pavement management.">
-<meta property="og:url" content="https://atlas-pave.com/pricing.html">
-<meta property="og:image" content="https://atlas-pave.com/Logo%20ATLASPave.png">
-  
 </head>
 <body>
 
@@ -229,7 +221,7 @@
     <div class="faq-list" style="max-width:760px;margin:0 auto;">
       <div class="faq-item sr">
         <div class="faq-q" data-i18n="faq1_q">How long does a survey take?</div>
-        <p class="faq-a" data-i18n="faq1_a">Surveys typically run up to 50 km/h. A 10 km corridor can be completed in under an hour of drive time. Processing and report delivery follows within hours of survey completion.</p>
+        <p class="faq-a" data-i18n="faq1_a">Surveys typically run at 20–30 km/h. A 10 km corridor can be completed in under an hour of drive time. Processing and report delivery follows within hours of survey completion.</p>
       </div>
       <div class="faq-item sr">
         <div class="faq-q" data-i18n="faq2_q">Do we need to close the road?</div>
@@ -262,6 +254,7 @@
       <div class="footer-brand">
         <div class="footer-wordmark">ATLAS.<span>Pave</span></div>
         <p data-i18n-html="footer_tagline">AI-driven Technologies for Lifecycle &amp;<br>Adaptive Infrastructure Management Systems.</p>
+        <button type="button" class="footer-brochure-btn" data-brochure-trigger data-i18n="brochure_cta">↓ Download Brochure</button>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer_col_platform">Platform</h4>
@@ -326,6 +319,33 @@
   document.querySelectorAll('.sr').forEach(function(el){ io.observe(el); });
 })();
 </script>
+<!-- ══ BROCHURE DOWNLOAD MODAL ══ -->
+<div class="brochure-overlay" id="brochureOverlay" aria-hidden="true">
+  <div class="brochure-modal" role="dialog" aria-modal="true" aria-labelledby="brochureTitle">
+    <button class="brochure-close" id="brochureClose" aria-label="Close">×</button>
+    <div id="brochureBody">
+      <div class="eyebrow" data-i18n="brochure_eyebrow">Brochure</div>
+      <h3 class="brochure-title" id="brochureTitle" data-i18n="brochure_title">Download the ATLAS.Pave brochure</h3>
+      <p class="brochure-sub" data-i18n="brochure_sub">Please share a few details and we'll take you straight to the download.</p>
+      <form id="brochureForm" novalidate>
+        <input class="ct-input" type="text"  name="name"         required data-i18n-ph="brochure_name"     placeholder="Full name">
+        <input class="ct-input" type="text"  name="title"        required data-i18n-ph="brochure_title_ph" placeholder="Title / Position">
+        <input class="ct-input" type="text"  name="organisation" required data-i18n-ph="brochure_org"      placeholder="Organisation">
+        <input class="ct-input" type="email" name="email"        required data-i18n-ph="brochure_email"    placeholder="Work email address">
+        <p class="brochure-note" data-i18n="brochure_note">Your details are used only to share ATLAS.Pave information and are never shared with third parties.</p>
+        <button type="submit" class="btn-primary brochure-submit" data-i18n="brochure_btn">Get the brochure →</button>
+      </form>
+    </div>
+    <div class="brochure-success" id="brochureSuccess" hidden>
+      <div class="brochure-check">✓</div>
+      <h3 class="brochure-title" data-i18n="brochure_thanks_title">Thank you!</h3>
+      <p class="brochure-sub" data-i18n="brochure_thanks_sub">Your download should begin automatically. If it doesn't, use the button below.</p>
+      <a class="btn-primary brochure-submit" id="brochureDownloadLink" href="ATLAS-Pave-Brochure.pdf" download data-i18n="brochure_thanks_btn">Download brochure →</a>
+    </div>
+  </div>
+</div>
+
 <script src="translations.js"></script>
+<script src="brochure.js"></script>
 </body>
 </html>

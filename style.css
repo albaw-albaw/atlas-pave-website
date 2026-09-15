@@ -684,66 +684,47 @@ footer {
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
-/* ════════════════════════════════════════
-   MOBILE — swipe slider for cards + table fix
-   ════════════════════════════════════════ */
 
-/* Hide swipe hint on desktop by default */
-.cap-swipe-hint { display: none; }
+/* ══════════════════ BROCHURE DOWNLOAD ══════════════════ */
+.footer-brochure-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--azure); color: #fff; border: none; cursor: pointer;
+  font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 600;
+  padding: 11px 20px; border-radius: 8px; margin-top: 6px;
+  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(40,116,197,0.30);
+}
+.footer-brochure-btn:hover { background: #5ba3e8; transform: translateY(-1px); box-shadow: 0 6px 22px rgba(40,116,197,0.45); }
 
-@media (max-width: 767px) {
-
-  /* Capability card rows → horizontal swipe slider */
-  .mod-grid,
-  .cap-grid-row2 {
-    display: flex !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 4px 20px 16px;
-    gap: 14px !important;
-    scrollbar-width: none;
-    margin: 0 -20px 20px !important;
-    max-width: none !important;
-  }
-  .mod-grid::-webkit-scrollbar,
-  .cap-grid-row2::-webkit-scrollbar { display: none; }
-
-  .cap-card {
-    flex: 0 0 75vw !important;
-    scroll-snap-align: start;
-  }
-
-  /* Swipe hint — show on mobile only */
-  .cap-swipe-hint {
-    display: block;
-    text-align: center;
-    font-size: 0.72rem;
-    color: var(--lgray);
-    margin-top: -8px;
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
-  }
-
-  /* Comparison table → horizontal scroll */
-  .matrix-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .matrix-table {
-    min-width: 580px;
-  }
-  .matrix-table th,
-  .matrix-table td {
-    padding: 11px 12px;
-    font-size: 0.78rem;
-  }
-
-  /* Benefits grid → 2 columns on mobile */
-  .benefits-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  .benefit-card { padding: 18px 14px; }
-
+.brochure-overlay {
+  position: fixed; inset: 0; z-index: 3000;
+  background: rgba(8,18,33,0.72); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.brochure-overlay.open { display: flex; }
+.brochure-modal {
+  background: #fff; border-radius: 16px; width: 100%; max-width: 440px;
+  padding: 34px 32px 30px; position: relative;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  max-height: 90vh; overflow-y: auto;
+  animation: brochurePop 0.22s ease;
+}
+@keyframes brochurePop { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+.brochure-close {
+  position: absolute; top: 12px; right: 14px;
+  background: none; border: none; font-size: 1.7rem; line-height: 1;
+  color: var(--lgray); cursor: pointer; padding: 4px 8px;
+}
+.brochure-close:hover { color: var(--blue); }
+.brochure-title { font-size: 1.32rem; font-weight: 800; letter-spacing: -0.02em; color: var(--blue); margin: 6px 0 8px; }
+.brochure-sub { font-size: 0.9rem; color: var(--gray); line-height: 1.6; margin-bottom: 18px; }
+.brochure-modal form { display: flex; flex-direction: column; }
+.brochure-note { font-size: 0.72rem; color: var(--lgray); line-height: 1.5; margin: 2px 0 14px; }
+.brochure-submit { border: none; cursor: pointer; width: 100%; text-align: center; justify-content: center; }
+.brochure-success { text-align: center; padding: 8px 0 4px; }
+.brochure-check {
+  width: 54px; height: 54px; border-radius: 50%;
+  background: var(--azure-l); color: var(--azure);
+  font-size: 1.7rem; display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
 }
