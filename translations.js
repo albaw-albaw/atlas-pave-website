@@ -59,7 +59,7 @@ window.ATLAS_I18N = {
 
     /* How It Works */
     hiw_eyebrow:  "How It Works",
-    hiw_title:    "Turn your Pavement Data into <em>Budget Saving</em>",
+    hiw_title:    "From survey to <em>decision</em> in hours",
     hiw_sub:      "A fully automated pipeline — no road closure, no manual computation, no delay. Results in hours, not weeks.",
     step1_num:    "STEP 01",
     step1_title:  "Deploy AiOT Device",
@@ -338,7 +338,7 @@ window.ATLAS_I18N = {
 
     /* How It Works */
     hiw_eyebrow:  "Cara Kerja",
-    hiw_title:    "Ubah Data Perkerasan Anda menjadi <em>Penghematan Anggaran</em>",
+    hiw_title:    "Dari survei ke <em>keputusan</em> dalam hitungan jam",
     hiw_sub:      "Pipeline otomatis penuh — tanpa penutupan jalan, tanpa komputasi manual, tanpa penundaan. Hasil tersedia dalam jam, bukan minggu.",
     step1_num:    "LANGKAH 01",
     step1_title:  "Pasang Perangkat AiOT",
