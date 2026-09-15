@@ -749,62 +749,23 @@ footer {
 }
 
 /* ════════════════════════════════════════
-   PHONE — comparison table as stacked cards
-   (a 3-column table cannot be read on a phone;
-    each row becomes its own labelled block)
+   PHONE — comparison table stays a full table,
+   swipes left/right instead of being clipped
    ════════════════════════════════════════ */
 @media (max-width: 767px) {
   .matrix-wrap {
-    overflow: visible;
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
   }
-  .matrix-table,
-  .matrix-table tbody,
-  .matrix-table tr,
-  .matrix-table td { display: block; width: auto !important; min-width: 0 !important; }
-
-  .matrix-table thead { display: none; }
-
-  .matrix-table tr {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: 12px;
-    overflow: hidden;
-  }
-  .matrix-table tr:hover td { background: inherit; }
-
-  /* row heading */
-  .matrix-table td:first-child {
-    font-size: 0.95rem; font-weight: 700; color: var(--blue);
-    padding: 13px 16px 11px;
-    background: var(--pale);
-    border-bottom: 1px solid var(--border);
-  }
-
-  /* the two comparison cells, each with its own label */
-  .matrix-table td.trad,
-  .matrix-table td.atlas {
-    padding: 11px 16px 12px;
-    font-size: 0.9rem; line-height: 1.5;
-    border-left: none;
-    border-bottom: 1px solid var(--border);
-  }
-  .matrix-table tr td:last-child { border-bottom: none; }
-
-  .matrix-table td.trad::before,
-  .matrix-table td.atlas::before {
-    display: block;
-    font-size: 0.64rem; font-weight: 700;
-    letter-spacing: 0.08em; text-transform: uppercase;
-    margin-bottom: 3px;
-  }
-  .matrix-table td.trad::before  { content: "Traditional"; color: #c98a8a; }
-  .matrix-table td.atlas::before { content: "ATLAS.Pave";  color: var(--azure); }
-  html[lang="id"] .matrix-table td.trad::before  { content: "Tradisional"; }
+  /* wide enough that all three columns stay readable; the user swipes across */
+  .matrix-table { min-width: 640px; }
+  .matrix-table th { padding: 13px 14px; font-size: 0.72rem; }
+  .matrix-table td { padding: 13px 14px; font-size: 0.85rem; line-height: 1.45; }
+  .matrix-table th:first-child,
+  .matrix-table td:first-child { width: 33%; }
 }
 
 /* ════════════════════════════════════════
