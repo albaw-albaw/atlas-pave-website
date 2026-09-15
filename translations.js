@@ -42,7 +42,7 @@ window.ATLAS_I18N = {
     ═══════════════════════════════════════ */
 
     /* Hero */
-    hero_title:   "The <span class=\"grad\">AI-Driven Intelligent</span><br>Pavement Management<br>System",
+    hero_title:   "The <span class=\"grad\">AI-Driven Intelligent</span><br>Pavement Management System",
     hero_desc:    "Turn your Pavement Data into Budget Saving",
     hero_btn1:    "Start Pilot Programme →",
     hero_btn2:    "Explore Solution ↓",
