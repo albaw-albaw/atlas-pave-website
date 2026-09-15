@@ -43,7 +43,7 @@ window.ATLAS_I18N = {
 
     /* Hero */
     hero_title:   "The <span class=\"grad\">AI-Driven Intelligent</span><br>Pavement Management<br>System",
-    hero_desc:    "Identify pavement defects in real-time, Reduce operational monitoring costs by 80%, Optimise maintenance budget allocation by up to 40%.",
+    hero_desc:    "Turn your Pavement Data into Budget Saving",
     hero_btn1:    "Start Pilot Programme →",
     hero_btn2:    "Explore Solution ↓",
 
@@ -59,7 +59,7 @@ window.ATLAS_I18N = {
 
     /* How It Works */
     hiw_eyebrow:  "How It Works",
-    hiw_title:    "From survey to <em>decision</em> in hours",
+    hiw_title:    "Turn your Pavement Data into <em>Budget Saving</em>",
     hiw_sub:      "A fully automated pipeline — no road closure, no manual computation, no delay. Results in hours, not weeks.",
     step1_num:    "STEP 01",
     step1_title:  "Deploy AiOT Device",
@@ -322,7 +322,7 @@ window.ATLAS_I18N = {
 
     /* Hero */
     hero_title:   "Sistem Manajemen Perkerasan <span class=\"grad\">Cerdas Berbasis AI</span>",
-    hero_desc:    "Identifikasi kerusakan perkerasan secara real-time, Kurangi biaya pemantauan operasional hingga 80%, Optimalkan alokasi anggaran pemeliharaan hingga 40%.",
+    hero_desc:    "Ubah Data Perkerasan Anda menjadi Penghematan Anggaran",
     hero_btn1:    "Mulai Program Pilot →",
     hero_btn2:    "Jelajahi Solusi ↓",
 
@@ -338,7 +338,7 @@ window.ATLAS_I18N = {
 
     /* How It Works */
     hiw_eyebrow:  "Cara Kerja",
-    hiw_title:    "Dari survei ke <em>keputusan</em> dalam hitungan jam",
+    hiw_title:    "Ubah Data Perkerasan Anda menjadi <em>Penghematan Anggaran</em>",
     hiw_sub:      "Pipeline otomatis penuh — tanpa penutupan jalan, tanpa komputasi manual, tanpa penundaan. Hasil tersedia dalam jam, bukan minggu.",
     step1_num:    "LANGKAH 01",
     step1_title:  "Pasang Perangkat AiOT",
