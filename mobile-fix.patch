@@ -1,0 +1,65 @@
+diff --git a/about.html b/about.html
+index af51932..fcce03b 100644
+--- a/about.html
++++ b/about.html
+@@ -2,6 +2,7 @@
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
++<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+diff --git a/index.html b/index.html
+index efbb4b2..665c904 100644
+--- a/index.html
++++ b/index.html
+@@ -2,6 +2,7 @@
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
++<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+diff --git a/pricing.html b/pricing.html
+index 6d24e28..7dbf12f 100644
+--- a/pricing.html
++++ b/pricing.html
+@@ -2,6 +2,7 @@
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
++<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+diff --git a/style.css b/style.css
+index 8ccc80d..d342621 100644
+--- a/style.css
++++ b/style.css
+@@ -747,3 +747,24 @@ footer {
+   .benefit-card { padding: 18px 14px; }
+ 
+ }
++
++/* ════════════════════════════════════════
++   PHONE POLISH — readability on small screens
++   ════════════════════════════════════════ */
++@media (max-width: 600px) {
++  /* "How it works" steps read badly in two narrow columns — stack them */
++  .timeline-wrap { grid-template-columns: 1fr; gap: 28px; }
++
++  /* Slightly larger body copy on a phone */
++  .hero-desc { font-size: 0.98rem; line-height: 1.7; }
++  .tl-desc { font-size: 0.9rem; line-height: 1.65; }
++  .mod-desc { font-size: 0.9rem; line-height: 1.65; }
++  .cap-desc { font-size: 0.9rem; line-height: 1.65; }
++  .benefit-desc { font-size: 0.88rem; line-height: 1.6; }
++  .stat-label { font-size: 0.82rem; }
++  .price-features li { font-size: 0.9rem; line-height: 1.5; }
++  .footer-col a, .footer-col p { font-size: 0.9rem; }
++
++  /* iOS zooms the page in when a focused field is under 16px */
++  input, select, textarea { font-size: 16px; }
++}
